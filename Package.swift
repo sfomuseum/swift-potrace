@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: " ",
+    name: "swift-potrace",
     products: [
         .library(
             name: "Potrace",
@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .target(
             name: "Potrace",
-            path: "Sources/Potrace"
+            path: "Sources"
         )
     ]
 )

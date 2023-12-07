@@ -20,11 +20,11 @@
     */
    
    public struct Settings {
-       var turnpolicy: String
-       var turdsize: Int
-       var optcurve: Bool
-       var alphamax: Double
-       var opttolerance: Double
+       public var turnpolicy: String
+       public var turdsize: Int
+       public var optcurve: Bool
+       public var alphamax: Double
+       public var opttolerance: Double
        
        public init(turnPolicy: String = "minority",
             turdSize: Int = 2,

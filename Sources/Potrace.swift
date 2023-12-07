@@ -1,6 +1,6 @@
 import CoreGraphics
 
-public struct Potrace {
+public class Potrace {
     
     private var info: Settings!
 
@@ -51,13 +51,13 @@ public struct Potrace {
         }
     }
     
-    public mutating func process(settings: Settings = Settings()) {
+    public func process(settings: Settings = Settings()) {
         self.info = settings
         bmToPathList()
         processPath()
     }
     
-    mutating func bmToPathList() {
+    func bmToPathList() {
         var bm1 = bm.copy()
         let currentPoint = Point(x: 0, y: 0)
         var path: Path

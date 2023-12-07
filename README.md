@@ -10,6 +10,22 @@ This is a fork of the `Potrace` class from @pcolton 's [potrace](https://github.
 
 Documentation is incomplete at this time.
 
+## Getting Started
+
+`swift-potrace` is designed for Swift 5. To depend on the logging API package, you need to declare your dependency in your `Package.swift`:
+
+```
+.package(url: "https://github.com/sfomuseum/swift-potrace", from: "0.0.1"),
+```
+
+and to your application/library target, add "Potrace" to your dependencies, e.g. like this:
+
+```
+.target(name: "PotraceApp", dependencies: [
+    .product(name: "Potrace", package: "swift-potrace")
+]
+```
+
 ## Example
 
 ```

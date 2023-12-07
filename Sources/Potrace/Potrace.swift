@@ -1,9 +1,10 @@
 import CoreGraphics
 
-public class Potrace {
+public struct Potrace {
     
+    private var info: Settings!
+
     fileprivate var bm: Bitmap!
-    fileprivate var info: Settings!
     fileprivate var pathlist = [Path]()
     
     /*
@@ -50,15 +51,15 @@ public class Potrace {
         }
     }
     
-    public func process(settings: Settings = Settings()) {
+    public mutating func process(settings: Settings = Settings()) {
         self.info = settings
         bmToPathList()
         processPath()
     }
     
-    func bmToPathList() {
+    mutating func bmToPathList() {
         var bm1 = bm.copy()
-        var currentPoint = Point(x: 0, y: 0)
+        let currentPoint = Point(x: 0, y: 0)
         var path: Path
         
         func findNext(point: PointI) -> PointI? {

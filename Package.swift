@@ -4,12 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-potrace",
+    name: " ",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Potrace",
             targets: ["Potrace"]
         ),
+    ],
+    targets: [
+        .target(
+            name: "Potrace",
+            path: "Sources/Potrace"
+        )
     ]
 )

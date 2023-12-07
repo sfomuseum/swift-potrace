@@ -1,3 +1,5 @@
+import Foundation
+
 struct Bitmap {
     var w: Int
     var h: Int

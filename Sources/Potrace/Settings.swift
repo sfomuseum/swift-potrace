@@ -26,7 +26,7 @@
        var alphamax: Double
        var opttolerance: Double
        
-       init(turnPolicy: String = "minority",
+       public init(turnPolicy: String = "minority",
             turdSize: Int = 2,
             optCurve: Bool = true,
             alphaMax: Double = 1.0,

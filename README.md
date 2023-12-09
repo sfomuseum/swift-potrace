@@ -32,7 +32,7 @@ and to your application/library target, add "Potrace" to your dependencies, e.g.
 import CoreGraphics
 import Potrace
 
-// Load you CGImage as necessary here
+// Load your CGImage as necessary here
 var cg_image: CGImage
 
 let potrace = try Potrace(image: cg_image)

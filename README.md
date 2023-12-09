@@ -4,7 +4,7 @@ A Swift package implementing the potrace algorithm. Potrace allows you to transf
 
 ## Background
 
-This is a fork of the `Potrace` class from @pcolton 's [potrace](https://github.com/pcolton/potrace) iOS application that has been updated to use `CGMutablePath` rather than the iOS-specific `UIBezierPath` and to take as its input a CoreGraphics `CGImage` instance rather than rather bytes.
+This is a refactoring of the `Potrace` class from @pcolton 's [potrace](https://github.com/pcolton/potrace) iOS application that has been updated to use `CGMutablePath` rather than the iOS-specific `UIBezierPath` and to take as its input a CoreGraphics `CGImage` instance rather than rather bytes.
 
 ## Documentation
 
@@ -48,4 +48,5 @@ The `Potrace.swift` file produces an "initialization of 'UnsafeMutableRawPointer
 
 ## See also
 
+* https://github.com/sfomuseum/swift-potrace-cli
 * https://github.com/pcolton/potrace
